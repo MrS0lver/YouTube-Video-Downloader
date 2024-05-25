@@ -64,7 +64,7 @@ class Main:
         self.github.grid(column=3,row=1,padx=20,pady=10)
     
     def show_quality_options(self,event):
-        self.quality_label = Label(self.frame, text="Select Quality:")
+        self.quality_label = Label(self.frame, text="Select Quality:",font="16")
         self.quality_label.pack(pady=5)
         
         self.quality_var = StringVar()
