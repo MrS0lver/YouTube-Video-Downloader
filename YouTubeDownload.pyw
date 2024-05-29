@@ -6,6 +6,7 @@ from tkinter.ttk import Combobox
 from PIL import Image, ImageTk
 import webbrowser
 
+
 class Main:
     def __init__(self, root):
         self.root = root
@@ -13,7 +14,7 @@ class Main:
         root.resizable(False, "600")
         self.root.title("Magic YT")
         self.root.configure(bg="lightblue")
-        self.root.iconbitmap("Icon.ico")
+        # self.root.iconbitmap("Icon.ico")
         self.root.bind("<Return>",self.show_quality_options)
 
         self.frame = Frame(self.root, bg ="lightgrey",relief=RIDGE)
